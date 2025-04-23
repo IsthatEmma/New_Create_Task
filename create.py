@@ -8,6 +8,7 @@ def quiz_question(new_question):
     for i in range(len(quiz_questions)):
         print(new_question[i]) 
         time.sleep(1)  
+
         user_answer = input("Your answer: ")  
         if user_answer == quiz_answers[i]:
             print("correct")
@@ -26,12 +27,17 @@ while continue_playing:
     else: 
         print("Okay bye! :)")
         continue_playing = False
+        break
 
-    play_again = input("Want to play again? Y/N")
-    if play_again == "Y":
-        print(continue_playing)
+    play_again = input("Want to play again? Yes/No")
+    if play_again == "Yes":
+        print("Okay!")
+        time.sleep(2)
+        continue
+       
 
     else: 
-     if play_again =="N":
+     if play_again =="No":
         print("Okay! Thanks for playing my mini quiz!")
+        break
 
