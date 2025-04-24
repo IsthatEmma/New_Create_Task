@@ -2,7 +2,7 @@ import random
 import time  
 
 quiz_questions = ["What is 2 + 2?", "What is 4 + 4?", "What is 7 x 2?", "What color is the sky?"]
-answers = ["4", "8", "14", "Blue"]  
+answer_key = ["4", "8", "14", "Blue"]  
 
 def quiz_question(new_question):
     for i in range(len(quiz_questions)):
@@ -10,7 +10,7 @@ def quiz_question(new_question):
         time.sleep(1)  
 
         user_answer = input(" ")  
-        if user_answer == answers[i]:
+        if user_answer == answer_key[i]:
             print("correct")
         else:
             print("incorrect")
@@ -35,7 +35,6 @@ while continue_playing:
         time.sleep(2)
         continue
        
-
     else: 
      if play_again =="No":
         print("Okay! Thanks for playing my mini quiz!")
