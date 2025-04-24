@@ -2,7 +2,7 @@ import random
 import time  
 
 quiz_questions = ["What is 2 + 2?", "What is 4 + 4?", "What is 7 x 2?", "What color is the sky?"]
-quiz_answers = ["4", "8", "14", "Blue"]  
+answers = ["4", "8", "14", "Blue"]  
 
 def quiz_question(new_question):
     for i in range(len(quiz_questions)):
@@ -10,7 +10,7 @@ def quiz_question(new_question):
         time.sleep(1)  
 
         user_answer = input(" ")  
-        if user_answer == quiz_answers[i]:
+        if user_answer == answers[i]:
             print("correct")
         else:
             print("incorrect")
