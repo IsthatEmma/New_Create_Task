@@ -9,7 +9,7 @@ def quiz_question(new_question):
         print(new_question[i]) 
         time.sleep(1)  
 
-        user_answer = input("Your answer: ")  
+        user_answer = input(" ")  
         if user_answer == quiz_answers[i]:
             print("correct")
         else:
@@ -21,7 +21,7 @@ continue_playing = True
 while continue_playing:
     play_quiz = input("Hello! Want to play my quiz, Yes or No: ")
     if play_quiz=="Yes": 
-        print("Awesome! Let's start")
+        print("Hooray, Awesome! Let's start")
         time.sleep(1)  
         quiz_question(quiz_questions)
     else: 
