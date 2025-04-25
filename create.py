@@ -7,14 +7,14 @@ answer_key = ["4", "8", "14", "Blue"]
 def quiz_question(new_question):
     for i in range(len(quiz_questions)):
         print(new_question[i]) 
-        time.sleep(1)  
+        time.sleep(3.5)  
 
         user_answer = input(" ")  
         if user_answer == answer_key[i]:
-            print("correct")
+            print("Correct! Hooray :D")
         else:
-            print("incorrect")
-        time.sleep(1)  
+            print("incorrect sorry :(")
+        time.sleep(2.5)  
 
 continue_playing = True
 
