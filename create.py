@@ -16,7 +16,7 @@ def quiz_question(new_question):
             print("Correct! Hooray :D")
         else:
             print("incorrect sorry :(")
-        time.sleep(2)  
+        time.sleep(3)  
 
 continue_playing = True
 
@@ -27,16 +27,16 @@ while continue_playing:
         time.sleep(1)  
         quiz_question(quiz_questions)
     else: 
-        print("Okay bye! :)")
+        print("Aw man okay! Bye:)")
         continue_playing = False
         break
 
     play_again = input("Want to play again? Yes/No")
     if play_again == "Yes":
-        print("Okay!")
-        time.sleep(2)
-        continue
-       
+        print("Okay! Taking you back to the start...")
+        time.sleep(4)
+        continue 
+
     else: 
      if play_again =="No":
         print("Okay! Thanks for playing my mini quiz!")
